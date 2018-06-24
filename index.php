@@ -1,5 +1,8 @@
 <?
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 function add(int $a = 0, int $b = 0): int {
   return $a + $b;
 }
@@ -17,4 +20,4 @@ class User {
 
 
 echo add(5, 3);
-echo add(7, 0);
+echo add('Dds', 0);
