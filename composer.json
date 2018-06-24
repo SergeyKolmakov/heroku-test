@@ -1,5 +1,12 @@
 {
+  "name": "village/heroku-test",
+  "authors": [
+    {
+      "name": "Kolmakov Sergey",
+      "email": "s-consul@mail.ru"
+    }
+  ],
   "require": {
-    "php": ">=7.1.0"
+    "php": ">7.0.0"
   }
 }
