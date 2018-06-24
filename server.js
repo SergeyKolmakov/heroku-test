@@ -5,7 +5,8 @@ const PORT = process.env.PORT || 5000;
 const server = http.createServer((req, res) => {
   console.log(req.method, req.url);
 
-  const text = fs.readFileSync('index.html', 'utf-8');
+  const file = req.url === '/style.css' ? 'style.css' : 'index.html';
+  const text = fs.readFileSync(file, 'utf-8');
   res.end(text);
 });
 
